@@ -1,9 +1,17 @@
 import Head from 'next/head'
+import {useState} from 'react'
 import SearchBar from '../components/SearchBar'
 import Coins from '../components/Coins'
 
 export default function Home({coins}) {
+  const [search,setSearch] = useState('')
 
+  const currentCoins = coins.filter(coin=> coin.name.toLowerCase().includes(search.toLowerCase()))
+
+  const eventHandler = e =>{
+    e.preventDefault()
+    setSearch(e.target.value.toLowerCase())
+  }
 
   return (
     <div >
@@ -13,7 +21,7 @@ export default function Home({coins}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SearchBar/>
-      <Coins coins={coins}/>
+      <Coins coins={currentCoins}/>
     </div>
   )
 }

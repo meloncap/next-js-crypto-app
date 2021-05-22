@@ -12,6 +12,7 @@
     width: 1000px;
     padding: 0rem 2rem;
     transition: ease-out 0.3s;
+    cursor: pointer;
   }
   
   .coin_row:hover {
