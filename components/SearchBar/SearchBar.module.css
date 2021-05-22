@@ -1,16 +1,17 @@
 .searchBarContainer{
-    margin-bottom: 64px;
-    display: flex;
-    align-items: center;
     width: 100%;
+    text-align:center;
 }
 .searchBar{
-    background-color: rgb(195, 217, 236);
-    border: none;
-    padding: 16px;
-    border-radius: 5px;
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-
+    margin: 0 auto;
+    margin: 48px;
+    width: 40%;
+    display: inline-block;
+    transition:ease-in 0.2s;
+    border: 1px solid #cccccc;
+    box-shadow: 5px 5px #888888;
+    padding: 10px;
+}
+.searchBar:hover{
+    background-color:rgba(227, 227, 233, 0.74);
 }

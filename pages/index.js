@@ -3,6 +3,8 @@ import SearchBar from '../components/SearchBar'
 import Coins from '../components/Coins'
 
 export default function Home({coins}) {
+
+
   return (
     <div >
       <Head>
@@ -24,5 +26,4 @@ export const getServerSideProps = async() =>{
       coins
     }
   }
-
 }
